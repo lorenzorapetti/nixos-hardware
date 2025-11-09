@@ -87,6 +87,7 @@
           asus-zenbook-ux535 = import ./asus/zenbook/ux535;
           asus-zenbook-ux481-intelgpu = import ./asus/zenbook/ux481/intelgpu;
           asus-zenbook-ux481-nvidia = import ./asus/zenbook/ux481/nvidia;
+          asus-zephyrus-ga401iv = import ./asus/zephyrus/ga401iv;
           asus-zephyrus-ga401 = import ./asus/zephyrus/ga401;
           asus-zephyrus-ga402 = import ./asus/zephyrus/ga402;
           asus-zephyrus-ga402x = import ./asus/zephyrus/ga402x;
@@ -426,16 +427,16 @@
           common-cpu-amd-zenpower = import ./common/cpu/amd/zenpower.nix;
           common-cpu-amd-raphael-igpu = import ./common/cpu/amd/raphael/igpu.nix;
           common-cpu-intel = import ./common/cpu/intel;
-          common-gpu-intel-comet-lake =
-            deprecated "992" "common-gpu-intel-comet-lake"
-              (import ./common/gpu/intel/comet-lake);
+          common-gpu-intel-comet-lake = deprecated "992" "common-gpu-intel-comet-lake" (
+            import ./common/gpu/intel/comet-lake
+          );
           common-cpu-intel-cpu-only = import ./common/cpu/intel/cpu-only.nix;
-          common-gpu-intel-kaby-lake =
-            deprecated "992" "common-gpu-intel-kaby-lake"
-              (import ./common/gpu/intel/kaby-lake);
-          common-gpu-intel-sandy-bridge =
-            deprecated "992" "common-gpu-intel-sandy-bridge"
-              (import ./common/gpu/intel/sandy-bridge);
+          common-gpu-intel-kaby-lake = deprecated "992" "common-gpu-intel-kaby-lake" (
+            import ./common/gpu/intel/kaby-lake
+          );
+          common-gpu-intel-sandy-bridge = deprecated "992" "common-gpu-intel-sandy-bridge" (
+            import ./common/gpu/intel/sandy-bridge
+          );
           common-gpu-amd = import ./common/gpu/amd;
           common-gpu-amd-sea-islands = import ./common/gpu/amd/sea-islands;
           common-gpu-amd-southern-islands = import ./common/gpu/amd/southern-islands;
